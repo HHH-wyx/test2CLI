@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出生日期查询器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>出生日期查询器</h1>
+            <p>计算您的出生天数</p>
+        </header>
+        
+        <main class="main-content">
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="birthDate">出生日期：</label>
+                    <input type="date" id="birthDate" class="date-input">
+                </div>
+                
+                <div class="input-group">
+                    <label for="targetDate">目标日期：</label>
+                    <input type="date" id="targetDate" class="date-input">
+                </div>
+                
+                <button id="calculateBtn" class="calculate-btn">计算天数</button>
+            </div>
+            
+            <div class="result-section" id="resultSection" style="display: none;">
+                <div class="result-card">
+                    <h3>计算结果</h3>
+                    <div class="result-content">
+                        <p>从 <span id="birthDisplay" class="date-display"></span></p>
+                        <p>到 <span id="targetDisplay" class="date-display"></span></p>
+                        <div class="days-result">
+                            <span id="daysCount" class="days-number">0</span>
+                            <span class="days-text">天</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>简单实用的日期计算工具</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
